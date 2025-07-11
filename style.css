@@ -1,77 +1,135 @@
+
+/* Font retrò e psichedelici */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Sfondo animato psichedelico */
 body {
-  font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(135deg, #fca311, #e85d04, #6a040f);
-  color: #fff7f0;
   margin: 0;
   padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  background: linear-gradient(270deg, #6b2c91, #d63384, #f0932b, #f9ca24, #e056fd);
+  background-size: 1000% 1000%;
+  animation: psychedelic 30s ease infinite;
   scroll-behavior: smooth;
 }
+
+/* Animazione sfondo */
+@keyframes psychedelic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header menu fisso */
 header {
-  background-color: #14213d;
-  padding: 1em;
-  text-align: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
   z-index: 1000;
+  text-align: center;
 }
-header h1 {
-  margin: 0 0 0.5em 0;
-  font-size: 2rem;
-  color: #fca311;
-  text-shadow: 1px 1px 3px #6a040f;
-}
+
 nav a {
-  color: #fca311;
+  color: #fff;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s;
 }
+
 nav a:hover {
-  color: #e85d04;
-  text-shadow: 0 0 10px #fca311;
+  color: #f9ca24;
 }
+
+/* Sezioni principali */
 section {
-  padding: 2em;
-  border-bottom: 1px solid #6a040f;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 80px 20px;
+  min-height: 100vh;
+  border-bottom: 2px dashed rgba(255,255,255,0.2);
 }
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1em;
-  text-shadow: 0 0 8px #fca311;
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #ffeaa7;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 30px;
 }
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-ul li {
-  padding: 0.5em 0;
-  font-size: 1.2rem;
-}
+
+/* Playlist */
 iframe {
+  display: block;
+  margin: 0 auto 40px;
   border-radius: 12px;
-  box-shadow: 0 0 15px #fca311aa;
-  max-width: 100%;
-  margin-top: 1em;
+  box-shadow: 0 0 15px #fff;
 }
-#topBtn {
+
+/* Sezione Album & Artisti */
+.album, .artist {
+  display: inline-block;
+  width: 200px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.album img, .artist img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.3s;
+}
+
+.album img:hover, .artist img:hover {
+  transform: scale(1.1);
+}
+
+/* Bottone Torna su */
+#scrollTopBtn {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #fca311;
-  border: none;
-  padding: 0.7em 1em;
+  background-color: #f9ca24;
+  color: #000;
+  padding: 12px 16px;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 0 10px #e85d04;
   display: none;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #fff;
+  z-index: 1001;
+  transition: background 0.3s;
 }
-#topBtn:hover {
-  background-color: #e85d04;
+
+#scrollTopBtn:hover {
+  background-color: #e1b12c;
+}
+
+/* Testi descrittivi */
+.description {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto 30px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .album, .artist {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 15px 5px;
+  }
 }

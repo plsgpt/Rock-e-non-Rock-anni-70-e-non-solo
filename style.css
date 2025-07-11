@@ -1,39 +1,77 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(45deg, #fca311, #14213d);
-  color: white;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #fca311, #e85d04, #6a040f);
+  color: #fff7f0;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
-
 header {
-  background-color: #000;
+  background-color: #14213d;
   padding: 1em;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
+header h1 {
+  margin: 0 0 0.5em 0;
+  font-size: 2rem;
+  color: #fca311;
+  text-shadow: 1px 1px 3px #6a040f;
+}
 nav a {
   color: #fca311;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
-
+nav a:hover {
+  color: #e85d04;
+  text-shadow: 0 0 10px #fca311;
+}
 section {
   padding: 2em;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #6a040f;
+  max-width: 900px;
+  margin: 0 auto;
 }
-
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+  text-shadow: 0 0 8px #fca311;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  padding: 0.5em 0;
+  font-size: 1.2rem;
+}
 iframe {
+  border-radius: 12px;
+  box-shadow: 0 0 15px #fca311aa;
   max-width: 100%;
-  margin: 1em 0;
+  margin-top: 1em;
 }
-
-footer {
-  background-color: #000;
-  text-align: center;
-  padding: 1em;
-  font-size: 0.8em;
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fca311;
+  border: none;
+  padding: 0.7em 1em;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #e85d04;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+#topBtn:hover {
+  background-color: #e85d04;
 }

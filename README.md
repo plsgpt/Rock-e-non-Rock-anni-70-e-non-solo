@@ -1,1 +1,0 @@
-# Rock-e-non-Rock-anni-70-e-non-solo

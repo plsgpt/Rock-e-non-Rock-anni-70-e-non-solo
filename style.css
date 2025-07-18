@@ -1,0 +1,121 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(45deg, #ff6f00, #ffca28, #ff6f00);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #663300;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #ffca28;
+}
+
+header, section {
+  padding: 6em 2em 2em 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.artisti-lista, .album-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.artisti-lista article, .album-lista article {
+  background: rgba(102, 51, 0, 0.8);
+  border-radius: 8px;
+  padding: 1em;
+  width: 220px;
+  box-shadow: 0 0 10px #ffca28;
+  text-align: center;
+}
+
+.artisti-lista img, .album-lista img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  box-shadow: 0 0 8px #ffca28;
+}
+
+iframe {
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #ffca28;
+}
+
+button#playPause {
+  display: block;
+  margin: 1em auto;
+  background-color: #663300;
+  color: #ffca28;
+  border: 2px solid #ffca28;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#playPause:hover {
+  background-color: #ffca28;
+  color: #663300;
+}
+
+button#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background: #663300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 0 8px #ffca28;
+  transition: background-color 0.3s ease;
+}
+
+button#backToTop:hover {
+  background-color: #ffca28;
+  color: #663300;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #663300;
+  margin-top: 3em;
+  color: #fff;
+}

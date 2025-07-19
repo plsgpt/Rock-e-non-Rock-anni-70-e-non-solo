@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Anni '70</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#generi">Generi</a></li>
+    <li><a href="#artisti">Artisti</a></li>
+    <li><a href="#album">Album</a></li>
+    <li><a href="#playlist">Playlist</a></li>
+    <li><a href="#curiosita">Curiosità</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>🌈 Rock Anni '70</h1>
+  <p>Viaggio musicale e visivo negli anni più rivoluzionari</p>
+</header>
+
+<section id="generi">
+  <h2>🎸 Generi musicali</h2>
+  <ul>
+    <li><strong>Rock psichedelico:</strong> effetti sonori sperimentali e visioni allucinate</li>
+    <li><strong>Hard rock:</strong> chitarre distorte e energia pura</li>
+    <li><strong>Disco:</strong> ritmo incalzante e ballo sfrenato</li>
+    <li><strong>Funk:</strong> groove e anima</li>
+  </ul>
+</section>
+
+<section id="artisti">
+  <h2>🌟 Artisti iconici</h2>
+  <div class="artista">
+    <img src="https://upload.wikimedia.org/wikipedia/en/2/25/David_Bowie_-_Aladdin_Sane.png" alt="David Bowie">
+    <p><strong>David Bowie</strong>: il Duca Bianco, simbolo di trasformazione e sperimentazione.</p>
+  </div>
+  <div class="artista">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/ABBA_-_Arrival_%28Official_Album_Cover%29.png" alt="ABBA">
+    <p><strong>ABBA</strong>: pop svedese che ha conquistato il mondo con eleganza e melodia.</p>
+  </div>
+</section>
+
+<section id="album">
+  <h2>💿 Album iconici</h2>
+  <div class="album">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dark_Side_of_the_Moon.png" alt="Pink Floyd - Dark Side">
+    <p><strong>The Dark Side of the Moon</strong> – Pink Floyd (1973)</p>
+  </div>
+</section>
+
+<section id="playlist">
+  <h2>🎶 Playlist YouTube / Spotify</h2>
+  <h3>Playlist Spotify</h3>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2aJuyJSFWW1l5M2S0Dqzhw" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <h3>Video YouTube - Brani iconici</h3>
+  <div class="video">
+    <iframe width="300" height="169" src="https://www.youtube.com/embed/QkMVscR5YOo" title="Pink Floyd - Time" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="169" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" title="Queen - Bohemian Rhapsody" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="curiosita">
+  <h2>✨ Curiosità Anni '70</h2>
+  <ul>
+    <li>I vinili erano il formato più amato, con copertine artistiche indimenticabili</li>
+    <li>I concerti live erano veri e propri eventi mistici</li>
+    <li>Il rock si intrecciava con la moda: zeppe, pantaloni a zampa, lustrini</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Rock Anni '70 - Tutti i diritti riservati</p>
+</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
